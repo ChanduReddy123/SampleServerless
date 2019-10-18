@@ -94,11 +94,11 @@ module.exports.update = async event => {
     };
 };
 module.exports.delete = async event => {
-    return {
+        return {
         statusCode: 200,
         body: JSON.stringify(
             {
-                message: 'Function updated by rakesh'
+                message: 'updated by rakesh this is funny'
             },
             null,
             2
