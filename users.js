@@ -98,7 +98,7 @@ module.exports.delete = async event => {
         statusCode: 200,
         body: JSON.stringify(
             {
-                message: 'Updating the application'
+                message: 'Function updated by rakesh'
             },
             null,
             2
