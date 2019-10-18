@@ -1,0 +1,118 @@
+{
+    "message": "List users method",
+    "input": {
+      "resource": "/user/get",
+      "path": "/user/get",
+      "httpMethod": "GET",
+      "headers": {
+        "Accept-Encoding": "gzip",
+        "CloudFront-Forwarded-Proto": "https",
+        "CloudFront-Is-Desktop-Viewer": "true",
+        "CloudFront-Is-Mobile-Viewer": "false",
+        "CloudFront-Is-SmartTV-Viewer": "false",
+        "CloudFront-Is-Tablet-Viewer": "false",
+        "CloudFront-Viewer-Country": "IN",
+        "Host": "ckod8o3mfj.execute-api.us-west-2.amazonaws.com",
+        "User-Agent": "vscode-restclient",
+        "Via": "1.1 26e3b1554d4a19ad8d47f38c5d0ca430.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Id": "M7ACuNgAXRI_CwAPe9dVMUHtcEE0FoKgu8_sB6DYz1gq1lY50VoLXA==",
+        "X-Amzn-Trace-Id": "Root=1-5da729ab-ea88d27e4c5cf1ee921cd147",
+        "X-Forwarded-For": "182.73.153.94, 130.176.76.78",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https"
+      },
+      "multiValueHeaders": {
+        "Accept-Encoding": [
+          "gzip"
+        ],
+        "CloudFront-Forwarded-Proto": [
+          "https"
+        ],
+        "CloudFront-Is-Desktop-Viewer": [
+          "true"
+        ],
+        "CloudFront-Is-Mobile-Viewer": [
+          "false"
+        ],
+        "CloudFront-Is-SmartTV-Viewer": [
+          "false"
+        ],
+        "CloudFront-Is-Tablet-Viewer": [
+          "false"
+        ],
+        "CloudFront-Viewer-Country": [
+          "IN"
+        ],
+        "Host": [
+          "ckod8o3mfj.execute-api.us-west-2.amazonaws.com"
+        ],
+        "User-Agent": [
+          "vscode-restclient"
+        ],
+        "Via": [
+          "1.1 26e3b1554d4a19ad8d47f38c5d0ca430.cloudfront.net (CloudFront)"
+        ],
+        "X-Amz-Cf-Id": [
+          "M7ACuNgAXRI_CwAPe9dVMUHtcEE0FoKgu8_sB6DYz1gq1lY50VoLXA=="
+        ],
+        "X-Amzn-Trace-Id": [
+          "Root=1-5da729ab-ea88d27e4c5cf1ee921cd147"
+        ],
+        "X-Forwarded-For": [
+          "182.73.153.94, 130.176.76.78"
+        ],
+        "X-Forwarded-Port": [
+          "443"
+        ],
+        "X-Forwarded-Proto": [
+          "https"
+        ]
+      },
+      "queryStringParameters": {
+        "age": "23",
+        "name": "chandu"
+      },
+      "multiValueQueryStringParameters": {
+        "age": [
+          "23"
+        ],
+        "name": [
+          "chandu"
+        ]
+      },
+      "pathParameters": null,
+      "stageVariables": null,
+      "requestContext": {
+        "resourceId": "mdbhh7",
+        "resourcePath": "/user/get",
+        "httpMethod": "GET",
+        "extendedRequestId": "BqNyvEK-PHcFo3A=",
+        "requestTime": "16/Oct/2019:14:31:07 +0000",
+        "path": "/dev/user/get",
+        "accountId": "797118203836",
+        "protocol": "HTTP/1.1",
+        "stage": "dev",
+        "domainPrefix": "ckod8o3mfj",
+        "requestTimeEpoch": 1571236267054,
+        "requestId": "2158d84c-edec-4648-82c1-9d380c4b3411",
+        "identity": {
+          "cognitoIdentityPoolId": null,
+          "accountId": null,
+          "cognitoIdentityId": null,
+          "caller": null,
+          "sourceIp": "182.73.153.94",
+          "principalOrgId": null,
+          "accessKey": null,
+          "cognitoAuthenticationType": null,
+          "cognitoAuthenticationProvider": null,
+          "userArn": null,
+          "userAgent": "vscode-restclient",
+          "user": null
+        },
+        "domainName": "ckod8o3mfj.execute-api.us-west-2.amazonaws.com",
+        "apiId": "ckod8o3mfj"
+      },
+      "body": null,
+      "isBase64Encoded": false
+    }
+  }

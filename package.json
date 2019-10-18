@@ -1,0 +1,16 @@
+{
+  "name": "serverlessdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.550.0",
+    "serverless-deployment-bucket": "^1.1.0",
+    "serverless-pseudo-parameters": "^2.5.0"
+  }
+}
