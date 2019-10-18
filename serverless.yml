@@ -64,10 +64,7 @@ functions:
       - http:
           path: /user/update
           method: post
-          request:
-            parameters:
-              querystrings:
-                
+
 #    The following are a few example eventss you can configure
 #    NOTE: Please make sure to change your handler code to work with those eventss
 #    Check the events documentation for details
