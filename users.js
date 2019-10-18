@@ -86,7 +86,7 @@ module.exports.update = async event => {
         statusCode: 200,
         body: JSON.stringify(
             {
-                message: 'this is in update function! '+event.queryStringParameters.name,
+                message: 'Function has been updated by chandu :D '+event.queryStringParameters.name,
             },
             null,
             2
@@ -98,7 +98,7 @@ module.exports.delete = async event => {
         statusCode: 200,
         body: JSON.stringify(
             {
-                message: 'Updating the application'
+                message: 'Updating the application by chandu'
             },
             null,
             2
