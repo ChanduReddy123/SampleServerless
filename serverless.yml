@@ -1,22 +1,23 @@
-
 service: serverlessdemo
 plugins:
   - serverless-deployment-bucket
   - serverless-pseudo-parameters
+  - serverless-reqvalidator-plugin
 # app and org for use with dashboard.serverless.com
-# app: serverlessdemo
-# org: chandureddy123
+app: serverlessdemo
+org: chandureddy123
 
 provider:
   name: aws
   runtime: nodejs10.x
+  stage: dev
+  region: us-west-2
   deploymentBucket:
     name: serverlesschandu
     serverSideEncryption: AES256
   apiName: serverlessdemo
 # you can overwrite defaults here
-  stage: dev
-  region: us-west-2
+  
   # role: arn:aws:iam::797118203836:role/lambda_basic_execution
 
 # you can add statements to the Lambda function's IAM Role here
@@ -64,6 +65,11 @@ functions:
       - http:
           path: /user/update
           method: post
+          request:
+            parameters:
+              querystrings:
+                name: true
+          reqValidatorName: MyRequestValidator
 
 resources:
   Resources:
@@ -83,4 +89,12 @@ resources:
             Value: 'ChanduReddy'
           - Key: 'Environment'
             Value: 'Dev' 
-      
+    MyRequestValidator:  
+      Type: "AWS::ApiGateway::RequestValidator"
+      Properties:
+        Name: 'my-req-validator'
+        RestApiId: 
+          Ref: ApiGatewayRestApi
+        ValidateRequestBody: false
+        ValidateRequestParameters: true
+

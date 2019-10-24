@@ -2,11 +2,12 @@
 const AWS = require("aws-sdk");
 AWS.config.update({ region: "us-west-2" });
 let docClient = new AWS.DynamoDB.DocumentClient();
-
+var tableName = process.env.TableName
 module.exports.create = async event => {
+   
     if (event.queryStringParameters != null) {
         var params = {
-            TableName: process.env.TableName,
+            TableName: tableName,
             Item: {
                 Name: event.queryStringParameters.name,
                 Age: event.queryStringParameters.age
@@ -39,7 +40,7 @@ module.exports.list = async event => {
     // if(!(typeof event.queryStringParameters.name === null) )
     try {
         var params = {
-            TableName: process.env.TableName,
+            TableName: tableName,
             Key: {
                 Name: event.queryStringParameters.name
             }
@@ -57,7 +58,7 @@ module.exports.list = async event => {
     catch (typeError) {
         try {
             var params = {
-                TableName: process.env.TableName
+                TableName: tableName
             }
             var data = await docClient.scan(params).promise()
             return {
@@ -86,7 +87,7 @@ module.exports.update = async event => {
         statusCode: 200,
         body: JSON.stringify(
             {
-                message: 'Function has been updated by chandu :D '+event.queryStringParameters.name,
+                message: 'Is this really working '+event.queryStringParameters.name,
             },
             null,
             2
